@@ -25,6 +25,9 @@ def load_prices():
 def filter_prices(prices, ticker):
     return [row for row in prices if row["ticker"] == ticker]
 
+def get_first_close(prices):
+    first = prices[0]
+    return float(fir)
 
 def main():
     instruments = load_instruments()
